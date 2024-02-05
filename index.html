@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil du Zoo Arcadia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&display=swap" rel="stylesheet">
+</head>
+<body>  
+    <header> 
+        <nav class="navbar">
+            <img src="images/logo_zoo.png" alt="" class="logo">
+            <h1>BIENVENUE <br>AU ZOO ARCADIA</h1>
+            <div class="dropdown">
+                <img src="images/hamburger.jpg" alt="" class="dropbtn">
+                <div class="dropdown-content">
+                <a href="#">Services</a>
+                <a href="#">Habitats</a>
+                <a href="#">Connexion</a>
+                <a href="contact.html">Contact</a>
+                </div>
+              </div>  
+        </nav>
+    </header>
+    <main>
+        <div class="row">
+            <div class="main">
+                    <p> ARCADIA est un zoo situé en France,près de la forêt de Brocéliande,en Bretagne depuis 1960.Il possède tout un panel d'animaux,réparti sur trois types d'habitats.Vous y trouverez la savane,la jungle et les marais avec tous les animaux qui y logent.Vous apprendrez les noms de chaque animal pour connaître leur santé au quotidien grace à nos équipes de vétérinaires.
+                        Plusieurs activitées vous seront proposées lors de votre visite au zoo.Un service de restauration vous sera egalement proposé.<br>Bonne visite à vous.
+                     </p>
+                    <h2>Le zoo est composé de plusieurs habitats:</h2>
+                    <div class="container">            
+                            <img src="images/savane.jpg"  alt="Image de la savane">   
+                            <img src="images/jungle.jpg" alt="Image de la jungle">
+                            <img src="images/marais.jpg"  alt="Image des marais">           
+                    </div>
+                    <h2>Plusieurs services vous seront proposés:</h2>
+                    <div class="container">                       
+                        <img src="images/restauration.jpg"  alt="Image du restaurant du zoo">
+                        <img src="images/petit_train.jpg" alt="Image de la visite en petit train">
+                        <img src="images/guide.jpeg" alt="Image de la visite guidée">
+                    </div>
+                    <h2>Exemples d'animaux que vous pourrez voir:</h2>
+                    <div class="container">                       
+                        <img src="images/animaux.jpg"  alt="Image de la savane">
+                        <img src="images/crocodile.jpeg" alt="Image de la jungle">
+                        <img src="images/hippopotame.jpeg"  alt="Image des marais">                      
+                        <img src="images/perroquet.jpeg"  alt="Image de la savane">
+                        <img src="images/singe.jpeg" alt="Image de la jungle">
+                        <img src="images/serpent.jpeg"  alt="Image des marais">
+                    </div>
+            </div>
+            <div class="side">
+                <div class="horaire">
+                    <h2>Horaires du Zoo:</h2>
+                    <p>Ouvert tous les jours de l'année<br>
+                        9h00 à 19h30 du lundi au vendredi<br>
+                    10h00 à 18h30 le samedi et dimanche</p>
+                </div>
+                <div class="commentaire">
+                    <h2>Avis des visiteurs:</h2>
+                    <div id="avis"></div>
+                </div>
+                
+                <div class="laisser_avis">
+                    <h2>Laisser un commentaire</h2>
+                    <form action="action_avis.php">
+                        <label for="pseudo" id="pseudo">Votre pseudo:</label><br>
+                        <input type="text" id="pseudo" name="pseudo"><br>
+                        <label for="avis1" id="avis1">Votre avis:</label><br>
+                        <textarea name="avis1" id="avis1" cols="40" rows="10"></textarea><br>
+                        <input type="submit" value="Submit" id="submit">
+                    </form>
+                </div>
+
+            </div>
+           
+          </div>
+        </main>
+          <div class="footer">
+            <h4>Copyright © 2023 ZOO Arcadia</h4>
+          </div>
+        <script src="avis2.js"></script>
+          
+
+   
+</body>
+</html>
